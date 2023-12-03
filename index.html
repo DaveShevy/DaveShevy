@@ -1,27 +1,87 @@
 <!DOCTYPE html>
 <html data-bs-theme="light">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - David Shevchenko</title>
-    <meta name="description" content="Data-driven research, projects, and blog posts. Portfolio background in Data Analysis, 3D Data Visualization, Empirical Research, Statistics, Machine Learning. ">
+    <meta name="description"
+        content="Data-driven research, projects, and blog posts. Portfolio background in Data Analysis, 3D Data Visualization, Empirical Research, Statistics, Machine Learning. ">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="assets/img/140784659_padded_logo.png">
+    <meta property="og:image" content="assets/img/logo.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/bs-theme-overrides.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1a1a1a; /* Adjust the background color as needed */
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        .header-container {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Adjust the height as needed */
+        }
+
+        .top-right-content {
+            position: absolute;
+            top: 20px; /* Adjust the top position as needed */
+            right: 20px; /* Adjust the right position as needed */
+            z-index: 2; /* Above the iframe */
+        }
+
+        .logo {
+            max-width: 200px; /* Adjust as needed */
+            height: auto;
+            display: block; /* To allow margin auto to center */
+        }
+
+        .social-icons {
+            font-size: 45px;
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .spline-embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            z-index: 1; /* Behind the content */
+        }
+    </style>
 </head>
 
 <body>
-    <main class="page lanidng-page">
+    <div class="header-container">
+        <iframe class="spline-embed" src="https://my.spline.design/cubic-16eff027f22b0f514031a60dace712b5/" allowfullscreen></iframe>
+        <div class="top-right-content">
+            <img class="logo" src="assets/img/logo.png" alt="DaveShevy Logo">
+            <ul class="social-icons">
+                <li><a href="https://www.youtube.com/channel/UCowROpTiBhwuFvTemc1A9Lg"><i class="icon ion-social-youtube"></i></a></li>
+                <li><a href="https://github.com/DaveShevy"><i class="icon ion-social-github"></i></a></li>
+                <li><a href="https://twitter.com/ShevyDave"><i class="icon ion-social-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/davidshevchenko/"><i class="icon ion-social-linkedin"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <main class="page landing-page">
         <section class="portfolio-block block-intro">
-            <div class="container">
+            <div class="container text-center">
                 <div class="about-me"></div>
+                <!-- The H1 element for the name was here previously, now moved to the header -->
+                <div class="social-icons">
+                    <!-- The social icons were here previously, now moved to the header -->
+                </div>
             </div>
-            <h1>David Shevchenko</h1>
-            <div class="social-icons"><a class="me-3" href="#"><i class="icon ion-social-youtube" style="font-size: 45px;"></i></a><a class="me-3" href="#"><i class="icon ion-social-github" style="font-size: 45px;"></i></a><a class="me-3" href="#"><i class="icon ion-social-twitter" style="font-size: 45px;"></i></a><i class="icon ion-social-linkedin" style="font-size: 45px;"></i></div>
         </section>
         <section class="portfolio-block photography"></section>
         <section class="portfolio-block skills py-5">
@@ -29,37 +89,54 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card text-center border-0 shadow-lg special-skill-item">
-                            <div class="card-body p-4"><i class="bi bi-graph-up mb-3" style="font-size:2rem;color:#6c63ff;"></i>
+                            <div class="card-body p-4"><i class="bi bi-graph-up mb-3"
+                                    style="font-size:2rem;color:#6c63ff;"></i>
                                 <p class="card-text">Where you can find my independent Research</p>
+                                <img src="assets/img/Data Driven Research.png" alt="Data Driven Research"
+                                    style="max-width:100%;height:auto;">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card text-center border-0 shadow-lg special-skill-item">
-                            <div class="card-body p-4"><i class="bi bi-lightbulb-fill mb-3" style="font-size:2rem;color:#6c63ff;"></i>
+                            <div class="card-body p-4"><i class="bi bi-lightbulb-fill mb-3"
+                                    style="font-size:2rem;color:#6c63ff;"></i>
                                 <p class="card-text">Where you can find my written thoughts</p>
+                                <img src="assets/img/Blog.png" alt="Blog"
+                                    style="max-width:100%;height:auto;">
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="card text-center border-0 shadow-lg special-skill-item">
-                            <div class="card-body p-4"><i class="bi bi-gear-fill mb-3" style="font-size:2rem;color:#6c63ff;"></i>
+                            <div class="card-body p-4"><i class="bi bi-gear-fill mb-3"
+                                    style="font-size:2rem;color:#6c63ff;"></i>
                                 <p class="card-text">Where you can find my projects</p>
+                                <img src="assets/img/Projects.png" alt="Projects"
+                                    style="max-width:100%;height:auto;">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <section class="portfolio-block mobile-app">
-                <div class="container align-items-center">
-                    <div class="row align-items-center">
-                        <div class="col-md-12 col-lg-5 text">
-                            <h3>About Me</h3>
-                            <p>Born and raised in the idyllic Pacific Northwest, I've always had a natural curiosity for understanding the world around me. This curiosity has driven me to a career in Data Analysis. With an interest in empirical research.</p>
-                        </div>
+        </section>
+        <section class="portfolio-block mobile-app">
+            <div class="container align-items-center">
+                <div class="row align-items-center">
+                    <!-- About Me Text on the left -->
+                    <div class="col-md-6 col-lg-7 text">
+                        <h3>About Me</h3>
+                        <p>Born and raised in the idyllic Pacific Northwest, I've always had a natural curiosity for
+                            understanding the world around me. This curiosity has driven me to a career in Data Analysis.
+                            With an interest in empirical research.</p>
+                    </div>
+                    <!-- About Me Image on the right -->
+                    <div class="col-md-6 col-lg-5">
+                        <img src="assets/img/Website image.JPG" alt="About Me"
+                            style="width:100%;height:auto;">
                     </div>
                 </div>
-            </section>
+            </div>
         </section>
     </main>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
